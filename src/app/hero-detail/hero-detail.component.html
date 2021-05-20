@@ -1,3 +1,4 @@
+<p> Je suis afficher </p>
 <div *ngIf="hero">
 	<h2>{{ hero.name | uppercase }} Details</h2>
 	<div>
@@ -6,6 +7,7 @@
 	<div>
 		<label for="hero-name">Hero name : </label>
 		<input type="text" id="hero-name" [(ngModel)]="hero.name" placeholder="name">
-	</div>	
+	</div>
+	<button (click)="goBack()">go back</button>	
 </div>
 
